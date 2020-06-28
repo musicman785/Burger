@@ -10,17 +10,12 @@ const burger = {
     },
     // The variables cols and vals are arrays.
     insertOne: (cols, vals, cb) => {
-      orm.create("burgers", cols, vals, (res) => {
+      orm.insertOne("burgers", cols, vals, (res) => {
         cb(res);
       });
     },
     updateOne: (objColVals, condition, cb) => {
-      orm.update("burgers", objColVals, condition, (res) => {
-        cb(res);
-      });
-    },
-    deleteOne: (condition, cb) => {
-      orm.delete("burgers", condition, (res) => {
+      orm.updateOne("burgers", objColVals, condition, (res) => {
         cb(res);
       });
     }

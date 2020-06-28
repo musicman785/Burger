@@ -9,6 +9,15 @@
     padding-bottom: 8%;
 }
 
+.change-devour {
+    margin-left: 2%;
+    background-color: chartreuse;
+}
+
+ul {
+    list-style-type: none;
+}
+
 .title {
     color:blue;
     padding-top: 10%;

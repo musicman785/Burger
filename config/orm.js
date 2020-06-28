@@ -59,17 +59,6 @@ const orm = {
         cb(result);
       });
     },
-    deleteOne: (table, condition, cb) => {
-      let queryString = `DELETE FROM ${table} WHERE ${condition}`;
-  
-      connection.query(queryString, (err, result) => {
-        if (err) {
-          throw err;
-        }
-  
-        cb(result);
-      });
-    },
     insertOne:(table, cols, vals, cb) => {
         let queryString = `INSERT INTO ${table} (${cols.toString()}) VALUES (${printQuestionMarks(vals.length)})`;
     
