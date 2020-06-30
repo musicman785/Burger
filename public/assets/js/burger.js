@@ -1,10 +1,6 @@
-// Button for deletion??
-// Controllers id  (router.post res.json)
-// move to second list?
-
-// Update function in public.js folder
 
 
+// Front-end javascript event functions
 $(function() {
   $(".change-devour").on("click", function(event) {
     event.preventDefault();

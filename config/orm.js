@@ -1,6 +1,7 @@
+// Calls connection.js file
 const connection = require("../config/connection.js")
 
-
+// Creates dynamilcally as many interrogation symbols as needed depending on the values that are inserted at orm.insertOne.
 function printQuestionMarks(num) {
     let arr = [];
   
@@ -33,7 +34,7 @@ function printQuestionMarks(num) {
     // translate array of strings to a single comma-separated string
     return arr.toString();
   }
-//methods to execute mysql commands
+//Methods to execute mysql commands
 // Object for all our SQL statement functions.
 const orm = {
     
